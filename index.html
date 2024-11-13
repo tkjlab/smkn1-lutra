@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda TKJ SMKN 1 Luwu Utara</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="CSS/7.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="#"><img src="img/logo.jpg" alt="TKJ Logo" height="60"></a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Beranda</a>
+            <a href="blog.html">Blog</a>
+            <a href="tentang.html">Tentang</a>
+            <a href="kontak.html">Kontak</a>
+            <a href="service.html">Service</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="slideshow">
+            <img src="img/praktek1.jpg" alt="Lab TKJ" class="active">
+            <img src="img/praktek.jpg" alt="Pengajaran TKJ">
+            <img src="img/slide3.jpg" alt="Siswa TKJ Praktik">
+        </div>
+        <div class="hero-text">
+            <h1>Selamat Datang di TKJ SMKN 1 Luwu Utara</h1>
+            <p>Mencetak tenaga profesional dalam bidang komputer dan jaringan</p>
+            <a href="tentang.html" class="cta-button">Selengkapnya</a>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <h2>Program Keahlian Teknik Komputer dan Jaringan</h2>
+        <p>Teknik Komputer dan Jaringan (TKJ) adalah program unggulan yang melatih siswa di bidang teknologi informasi dan jaringan komputer. Program ini memberikan keterampilan teknis dan teoritis untuk mempersiapkan siswa dalam dunia kerja.</p>
+        
+        <div class="about-info">
+            <div class="info-item">
+                <i class="fas fa-network-wired"></i>
+                <h3>Instalasi dan Konfigurasi Jaringan</h3>
+                <p>Mengajarkan siswa untuk menginstal dan mengonfigurasi jaringan lokal (LAN), wireless, dan jaringan berbasis cloud. Siswa juga dilatih menggunakan perangkat jaringan seperti router, switch, dan access point.</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Keamanan Jaringan</h3>
+                <p>Pelatihan mendalam tentang keamanan jaringan, firewall, dan VPN untuk melindungi data serta mencegah serangan siber. Lulusan diharapkan memahami konsep dasar dan implementasi keamanan jaringan.</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-cogs"></i>
+                <h3>Administrasi Server</h3>
+                <p>Mempelajari manajemen server dengan berbagai sistem operasi seperti Windows Server dan Linux. Siswa diajarkan membuat server web, server database, dan file server.</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Pemrograman Dasar</h3>
+                <p>Siswa mendapatkan dasar-dasar pemrograman, yang bermanfaat dalam pengembangan perangkat lunak dan aplikasi jaringan. Pelajaran meliputi pemrograman jaringan dan pengelolaan basis data.</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-chart-line"></i>
+                <h3>Manajemen Proyek IT</h3>
+                <p>Pelatihan untuk mengelola proyek berbasis teknologi informasi. Siswa dilatih dalam manajemen waktu, pengelolaan anggaran, dan koordinasi tim untuk proyek jaringan dan IT lainnya.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TKJ SMKN 1 Luwu Utara. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slideshow img');
+
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active');
+                if (index === slideIndex) {
+                    slide.classList.add('active');
+                }
+            });
+            slideIndex = (slideIndex + 1) % slides.length;
+        }
+
+        setInterval(showSlides, 3000);
+    </script>
+</body>
+</html>
