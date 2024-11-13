@@ -1,0 +1,142 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f8ff; /* Warna background biru muda */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Container */
+  .container {
+    width: 80%;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  /* Header dan Navbar */
+  header {
+    background: linear-gradient(135deg, #001327, #113b68); /* Gradasi biru */
+    padding: 2rem 1rem;
+    position: relative;
+    color: #fff;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header nav {
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+  }
+  
+  .navbar {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar li a:hover {
+    background-color: #efff0e;
+    color: #0f0000;
+  }
+  
+  /* Intro Section */
+  .intro {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .intro h2 {
+    color: #0056b3;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .intro p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Post Section */
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .post {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s;
+  }
+  
+  .post:hover {
+    transform: translateY(-5px);
+  }
+  
+  .post h3 {
+    font-size: 1.5rem;
+    color: #0056b3;
+  }
+  
+  .post img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
+  .post p {
+    color: #555;
+    margin: 1rem 0;
+  }
+  
+  .btn-readmore {
+    display: inline-block;
+    background-color: #570e92;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-readmore:hover {
+    background-color: #5e05ee;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  

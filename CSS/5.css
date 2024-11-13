@@ -1,0 +1,137 @@
+/* Gaya Umum */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+header {
+    background-color: #002855;
+    text-align: center;
+    padding: 30px 0;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.nav {
+    margin-top: 15px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #ffcc33;
+}
+
+/* Kontainer Layanan */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 20px;
+    background: linear-gradient(120deg, #1a73e8, #ff6f61);
+    transition: background-color 0.4s ease;
+}
+
+/* Kartu Layanan */
+.service-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 30px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    color: #002855;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.icon-circle {
+    font-size: 3em;
+    color: #1a73e8;
+    background: #e8f0fe;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+.service-card:hover .icon-circle {
+    background: #ff6f61;
+    color: #fff;
+}
+
+.service-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.4s ease;
+}
+
+.learn-more:hover {
+    background-color: #ff6f61;
+}
+
+/* Animasi Hover pada Seluruh Kartu */
+.service-card:hover .icon-circle,
+.service-card:hover h2,
+.service-card:hover p,
+.service-card:hover .learn-more {
+    animation: popUp 0.3s ease forwards;
+}
+
+/* Animasi */
+@keyframes popUp {
+    0% { transform: scale(0.95); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 80%;
+    }
+}

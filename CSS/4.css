@@ -1,0 +1,89 @@
+/* Gaya umum untuk seluruh halaman */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #002855;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Kontainer Utama */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Konten */
+.content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.content h2 {
+    color: #002855;
+    margin-top: 20px;
+    font-size: 1.75em;
+}
+
+.content p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: #666;
+}
+
+.content ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.content ul li {
+    font-size: 1em;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* Tombol Kembali */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #002855;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #ffcc33;
+    color: #002855;
+}
+
+/* Gaya untuk link dan interaksi */
+a {
+    color: #002855;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffcc33;
+}
